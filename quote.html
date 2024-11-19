@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="body row-md-12">
+            <div>
+                <h6 class=" header-left d-flex">
+                    <div class="head-left-top">“</div>
+                    <p>Quotes</p>
+                </h6>
+
+                <div class="col header-middle ">
+                    <div>Home</div>
+                    <div class="under-top"></div>
+                    <div class="text-top-right" style="color: #909BEC">Quotes</div>
+                </div>
+                <img src="picture/america.png" class=" btn btn-light dropdown rounded-circle p-0 header-right"
+                    data-bs-toggle="dropdown" type="button" aria-expanded="false" id="languageDropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item d-flex " href="#">
+                            <img src="picture/america.png" class="icon_flag" alt="">
+                            English
+                        </a></li>
+
+                    <li><a class="dropdown-item d-flex " href="#">
+                            <img src="picture/Flag_of_Vietnam.svg.png" class="icon_flag" alt="">
+                            Vietnam
+                        </a></li>
+
+                    <li><a class="dropdown-item d-flex " href="#">
+                            <img src="picture/Flag_of_the_People's_Republic_of_China.svg.png" class="icon_flag" alt="">
+                            Chinese
+                        </a></li>
+                </ul>
+            </div>
+            <!--Body mid-->
+            <div class="body_mid">
+                Explore quote
+            </div>
+            <!-- search -->
+            <div class="body_mid_search ">
+                <div> <i class="fa-solid fa-magnifying-glass fs-5 ms-2 me-2"></i></div>
+                <input type="text" placeholder="Enter quote you want to search..." class="input_search  w-100">
+
+                <div class="vr me-3"></div>
+                <button class="click_search_right p-1 me-3" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-layer-group border-none p-0"></i>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Choose Topic</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body custom-scroll ">
+                                <div class="row row-cols-2 row-cols-md-4 ">
+                                    <button class="col item-slack">Life</button>
+                                    <button class="col item-slack">History</button>
+                                    <button class="col item-slack">Funny</button>
+                                    <button class="col item-slack">Literature</button>
+                                    <button class="col item-slack">Love</button>
+                                    <button class="col item-slack">Family</button>
+                                    <button class="col item-slack">Sad</button>
+                                    <button class="col item-slack">Smile</button>
+                                    <button class="col item-slack">Father</button>
+                                    <button class="col item-slack">Mother</button>
+                                    <button class="col item-slack">Study</button>
+                                    <button class="col item-slack">Hot</button>
+                                    <button class="col item-slack">Cool</button>
+                                    <button class="col item-slack">Summer</button>
+                                    <button class="col item-slack">Success</button>
+                                    <button class="col item-slack">Winter</button>
+                                    <button class="col item-slack">Woman</button>
+                                    <button class="col item-slack">Man</button>
+                                    <button class="col item-slack">Phone</button>
+                                    <button class="col item-slack">Smart</button>
+                                    <button class="col item-slack">Small</button>
+                                    <button class="col item-slack">Something</button>
+                                    <button class="col item-slack">Funny</button>
+                                    <button class="col item-slack">Literature</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- profile-bars -->
+            <button class="click_profile_opcative" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="modal fade bg-dark" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bg-dark" style="height: 500px;">
+                        <div class="modal-body ">
+                            <button type="button" style="height: 30px;"
+                                class="btn_close fs-2 text-light bg-dark border-0" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <div class="Text_choice d-flex flex-columns">
+                                <button class="Button_click bg-dark">Home</button>
+                                <button class="Button_click bg-dark">Quotes</button>
+                                <div class="dropdown">
+                                    <button class="btn bg-dark p-2 text-light border-secondary dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Language&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#"><img class="icon_flag"
+                                                    src="picture/america.png" alt="">America</a></li>
+                                        <li><a class="dropdown-item" href="#"><img class="icon_flag"
+                                                    src="picture/Flag_of_Vietnam.svg.png" alt="">Viet Nam</a></li>
+                                        <li><a class="dropdown-item" href="#"><img class="icon_flag"
+                                                    src="picture/Flag_of_the_People's_Republic_of_China.svg.png"
+                                                    alt="">Chinese</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- end profile-bars -->
+            <div class="text-under-search">Enter to search &nbsp;&nbsp;
+                <img src="picture/icons8-enter-50.png" width="16" height="16" alt="">
+            </div>
+            <div class="text-underTextSearch row">
+                <div class="row-md-3 text-light align-items-end d-flex justify-content-center">
+                    <h5>Quote of the day</h5>
+                </div>
+                <div class="row-md-6 Text_Under gap-1 text-light">
+                    <p class="p_1 ">Life is what happens when you're busy making other plans - John Lennon</p>
+                </div>
+                <div class=" row-md-3 elips">
+                    <div class="elip-1"></div>
+                    <div class="elip-2"></div>
+                    <div class="elip-1"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="body-2 row-md-12 justify-content-center d-flex">
+            <div class="row-md-12 mb-5 mt-5">
+                <img src="picture/computer.jpg" width="250" height="150">
+            </div>
+            <div class="mt-5 row-md-12" style="font-size: 12px;">Glinteco © 2023 All Rights Reserved</div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
